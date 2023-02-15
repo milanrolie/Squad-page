@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+  padding: 0% 0% 0% 0%;
+  font-family: 'Lato', sans-serif;
+  /* overflow: hidden; */
+  /* background-color: black;   */
+}
+
+h1 {
+  font-size: 4em;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: .9em;
+}
+
+h2 {
+  font-size: 2em;
+  font-weight: 500;
+  line-height: .9em;
+  margin-top: 10%;
+}
+
+h4 {
+  font-size: 1.3em;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1.1em;
+  margin-top: 2%;
+  margin-left: 1%;
+  max-width: 70%;
+}
+
+input {
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+fieldset input{
+  /* display: none; */
+}
+
+.input-block {
+  width: 10px;
+  height: 10px;
+  background-color: aqua;
+}
+
+label {
+  cursor: pointer;
+  color: #f04d34;
+}
+
+label:hover {
+  color: #f04d34;
+}
+
+
+input[type=checkbox]:checked + label {
+  color: #000dff;  
+  }
+
+
+aside {
+}
+
+fieldset {
+  padding: 5% 0;
+  text-transform: uppercase;
+  border: none;
+  margin: 10% 0%;
+}
+
+.main-nav-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 10%;
+  padding-right: 10%;
+  position: relative;
+  height: 100vh;
+  width: 25vw;
+  background-color: rgb(255, 226, 226);
+  border-radius: 0em 2em 2em 2em;
+}
+
+.options-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+
+.distance-slider {
+  text-transform: uppercase;
+  width: 90%;
+  margin-top: -8%;
+}
+
+.price-input{
+  width: 100%;
+  display: flex;
+  margin: 30px 0 35px;
+}
+
+.price-input .field{
+  display: flex;
+  width: 100%;
+  height: 35px;
+  align-items: center;
+}
+
+.field input{
+  width: 100%;
+  height: 100%;
+  font-size: 19px;
+  font-weight: 900;
+  border-radius: 5px;
+  margin-right: 20px;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  color: #000dff;
+  -moz-appearance: textfield;
+}
+
+.field input:focus {
+  color: #f04d34;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.price-input .separator{
+  width: 50px;
+  display: flex;
+  font-size: 0px;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider{
+  height:15px;
+  position: relative;
+  background: rgb(255, 186, 186);
+  border-radius: 1em;
+  margin-top: -8%;
+}
+
+.slider .progress{
+  height: 100%;
+  left: 0%;
+  right: 25%;
+  position: absolute;
+  border-radius: 1em;
+  background: #f04d34;
+}
+
+.range-input{
+  position: relative;
+  margin-bottom: 10%;
+}
+
+.range-input input{
+  position: absolute;
+  width: 100%;
+  height: 5px;
+  top: -5px;
+  background: none;
+  pointer-events: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-thumb{
+  height: 21px;
+  width: 21px;
+  transform: translateY(-5px);
+  border-radius: 50%;
+  background: #000dff;
+  pointer-events: auto;
+  -webkit-appearance: none;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+input[type="range"]::-moz-range-thumb{
+  height: 17px;
+  width: 17px;
+  border: none;
+  /* border-radius: 50%; */
+  background: #fafeff;
+  pointer-events: auto;
+  -moz-appearance: none;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+}
+
+.a-z {
+  position: absolute;
+}
+
+.cards-wrapper {
+  width: 100%;
+  height: 100vh;
+  overflow-Y: scroll;
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+}
+
+.card {
+  width: 30%;
+  max-width: 49%;
+  aspect-ratio: 1;
+  background-color: rgb(57, 255, 182);
+  border-radius: 2em;
+  transition: .6s;
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+.card:hover {
+  /* transform: scaleY(1.2);   */
+}
+
+.card:nth-of-type(1) {
+  background-color: blueviolet;
+}
+
+.card:nth-of-type(2) {
+  background-color: #98ed8e;
+}
+
+.card:nth-of-type(3) {
+  background-color: #000dff;
+}
+
+.card:nth-of-type(4) {
+  background-color: #ffd900;
+}
+
+.card:nth-of-type(5) {
+  background-color: #ff5e00;
+}
+
+.card:nth-of-type(6) {
+  background-color: #dbd8f0;
+}
+
+.card:nth-of-type(7) {
+  background-color: #ff002b;
+}
+
+.card:nth-of-type(8) {
+  background-color: #ccbbe7;
+}
+
+.card:nth-of-type(9) {
+  background-color: blueviolet;
+}
+
+.card:nth-of-type(10) {
+  background-color: blueviolet;
+}
+
+.card:nth-of-type(11) {
+  background-color: blueviolet;
+}
+
+.card:nth-of-type(1):hover {
+  background-color: azure;
+  width: 40%;
+}
+
+.card:nth-of-type(2):hover {
+  background-color: azure;
+  width: 40%;
+}
+
+.card:nth-of-type(3):hover {
+  background-color: azure;
+  width: 40%;
+}
+
+.card:nth-of-type(4):hover {
+  background-color: azure;
+  width: 40%;
+}
+
+.card:nth-of-type(5):hover {
+  background-color: azure;
+  width: 40%;
+}
+
+.card:nth-of-type(6):hover {
+  background-color: azure;
+  width: 40%;
+}
+
+.card:nth-of-type(7):hover {
+  background-color: azure;
+  width: 40%;
+}
+
+.card:nth-of-type(8):hover {
+  background-color: azure;
+  width: 40%;
+}
+
+.card:nth-of-type(9):hover {
+  background-color: azure;
+  width: 40%;
+}
+
+.card:nth-of-type(10):hover {
+  background-color: azure;
+  width: 40%;
+}
+
+.card:nth-of-type(11):hover {
+  background-color: azure;
+  width: 40%;
+}
+
+
+
+
+.card:nth-of-type(even) {
+  /* background-color: rgb(255, 69, 69); */
+}

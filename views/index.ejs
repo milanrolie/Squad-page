@@ -1,0 +1,159 @@
+<%- include('./partials/head') %>
+
+    <aside>
+        
+            
+        <div class="main-nav-wrapper">
+            <div class="secretly-not-a-nav-wrapper">
+            <nav class="main-navigation"></nav>
+            <h1>Squad page</h1>
+            <p>
+                A squad typically refers to a small military unit consisting of a few
+                soldiers led by a non-commissioned officer.
+            </p>
+            <!-- <h2>filter:</h2> -->
+
+
+            <div class="options-wrapper">
+                <fieldset>
+                    <h4>Stad</h4>
+                    <div>
+                        <input type="checkbox" id="amsterdam" name="amsterdam" checked />
+                        <label for="amsterdam">Amsterdam</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="Utrecht" name="Utrecht" checked />
+                        <label for="Utrecht">Utrecht</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="leiden" name="leiden" checked />
+                        <label for="leiden">Leiden</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="den-haag" name="den-haag" checked />
+                        <label for="den-haag">Den Haag</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="alkmaar" name="alkmaar" checked />
+                        <label for="alkmaar">Alkmaar</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="zaandam" name="zaandam" checked />
+                        <label for="zaandam">Zaandam</label>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <h4>Vervoer</h4>
+                    <div>
+                        <input type="checkbox" id="benenwagen" name="benenwagen" checked />
+                        <label for="benenwagen">Benenwagen</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="fiets" name="fiets" checked />
+                        <label for="fiets">Fiets</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="auto" name="auto" checked />
+                        <label for="auto">Auto</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="bus" name="bus" checked />
+                        <label for="bus">Bus</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="trein" name="trein" checked />
+                        <label for="trein">Trein</label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" id="boot" name="boot" checked />
+                        <label for="boot">Boot</label>
+                    </div>
+                </fieldset>
+            </div>
+            
+            <h4>Kilometers</h4>
+            <div class="distance-slider">
+                <div class="price-input">
+                    <div class="field">
+                        <span>Min</span>
+                        <input type="number" class="input-min" value="0" />
+                    </div>
+                    <div class="separator">-</div>
+                    <div class="field">
+                        <span>Max</span>
+                        <input type="number" class="input-max" value="75" />
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="progress"></div>
+                </div>
+                <div class="range-input">
+                    <input type="range" class="range-min" min="0" max="100" value="0" step="1" />
+                    <input type="range" class="range-max" min="0" max="100" value="75" step="1" />
+                </div>
+            </div>
+            <h4>Reistijd in minuten</h4>
+            <div class="distance-slider">
+                <div class="price-input">
+                    <div class="field">
+                        <span>Min</span>
+                        <input type="number" class="input-min" value="0" />
+                    </div>
+                    <div class="separator">-</div>
+                    <div class="field">
+                        <span>Max</span>
+                        <input type="number" class="input-max" value="120" />
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="progress"></div>
+                </div>
+                <div class="range-input">
+                    <input type="range" class="range-min" min="0" max="100" value="25" step="1" />
+                    <input type="range" class="range-max" min="0" max="100" value="75" step="1" />
+                </div>
+            </div>
+        </div>
+    </div>
+    </aside>
+
+    <section class="content">
+        <div class="sorting-options">
+            <div class="a-z">a..z</div>
+        </div>
+        <div class="cards-wrapper">
+            <div class="cards">
+                <div class="card">
+                    <% squad.members.forEach(member => { %>
+                        <article>
+                          <% if (member.avatar) { %>
+                          <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
+                          <% }else{ %>
+                          <img src="/placeholder.jpg" alt="Placeholder avatar" />
+                          <% } %>
+                          <h2><%= member.name %> <%= member.prefix %> <%= member.surname %></h2>
+                        </article>
+                        <% }) %>
+                </div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+                <div class="card"></div>
+            </div>
+        </div>
+    </section>
+
+    <%- include('./partials/foot') %>
