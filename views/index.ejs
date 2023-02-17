@@ -106,17 +106,19 @@
                         <input type="range" class="range-min" min="0" max="100" value="25" step="1" />
                         <input type="range" class="range-max" min="0" max="100" value="75" step="1" />
                     </div> -->
+                    <h4>Sorteer op</h4>
+
                     <section class="filter-bar">
                         <div class="inner-bar">
                             <div class="squad-select">
-                                <a href="/?squad=squad-a-2022" class="filterBTN">Squad A</a>
-                                <a href="/?squad=squad-b-2022" class="filterBTN">Squad B</a>
-                                <a href="/?squad=squat-c-2022" class="filterBTN">Squad C</a>
+                                <a href="/?squad=squad-a-2022" class="filterBTN">Squad AA</a>
+                                <a href="/?squad=squad-b-2022" class="filterBTN">Squad BB</a>
+                                <a href="/?squad=squat-c-2022" class="filterBTN">Squad CC</a>
                             </div>
                             <div class="filter-select">
                                 <a href="/?squad=<%= squad.slug %>&orderBy=name" class="filterBTN">Voornaam</a>
                                 <a href="/?squad=<%= squad.slug %>&orderBy=surname" class="filterBTN">Achternaam</a>
-                                <a href="/?squad=<%= squad.slug %>&orderBy=gitHubHandle" class="filterBTN">GitHub naam</a>
+                                <a href="/?squad=<%= squad.slug %>&orderBy=gitHubHandle" class="filterBTN">GitHub</a>
                             </div>
                         </div>
                     </section>

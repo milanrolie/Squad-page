@@ -233,6 +233,38 @@ input[type="range"]::-moz-range-thumb{
   color: #000000;
 }
 
+.inner-bar {
+  margin-left: -2%;
+}
+
+.squad-select {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  margin-top: 4%;
+}
+
+.filter-select {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.filterBTN {
+  background-color: #000dff;  
+  color: antiquewhite;
+  text-transform: uppercase;
+  font-size: .8em;
+  border-radius: 1em;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.filterBTN:hover {
+  background-color: #f04d34;  
+}
+
+
 .cards-wrapper {
   width: 100%;
   height: 100vh;
