@@ -1,0 +1,41 @@
+{
+  "name": "node.fetch",
+  "version": "1.0.0",
+  "description": "fetch for node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/yeliex/node.fetch.git"
+  },
+  "keywords": [
+    "node",
+    "ajax",
+    "fetch"
+  ],
+  "author": {
+    "name": "yeliex",
+    "email": "yeliex@yeliex.com",
+    "url": "http://yeliex.wang"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yeliex/node.fetch/issues"
+  },
+  "homepage": "https://github.com/yeliex/node.fetch#readme",
+  "dependencies": {
+    "babel": "^6.5.2",
+    "node-fetch": "^1.5.3"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.6.0",
+    "co": "^4.6.0"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
+  }
+}

@@ -24,6 +24,9 @@
   "homepage": "https://github.com/milanrolie/connect-your-tribe-squad-page#readme",
   "dependencies": {
     "ejs": "^3.1.8",
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "fetch": "^1.1.0",
+    "node-fetch": "^3.3.0",
+    "node.fetch": "^1.0.0"
   }
 }
