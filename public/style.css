@@ -98,6 +98,16 @@ fieldset {
   margin: 10% 0%;
 }
 
+img {
+  position: absolute;
+  right: 5%;
+  top: 5%;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
 .main-nav-wrapper {
   display: flex;
   justify-content: center;
