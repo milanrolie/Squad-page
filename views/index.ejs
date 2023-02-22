@@ -86,26 +86,7 @@
                         <input type="range" class="range-max" min="0" max="100" value="75" step="1" />
                     </div>
                 </div>
-                <!-- <h4>Reistijd in minuten</h4>
-                <div class="distance-slider">
-                    <div class="price-input">
-                        <div class="field">
-                            <span>Min</span>
-                            <input type="number" class="input-min" value="0" />
-                        </div>
-                        <div class="separator">-</div>
-                        <div class="field">
-                            <span>Max</span>
-                            <input type="number" class="input-max" value="120" />
-                        </div>
-                    </div>
-                    <div class="slider">
-                        <div class="progress"></div>
-                    </div>
-                    <div class="range-input">
-                        <input type="range" class="range-min" min="0" max="100" value="25" step="1" />
-                        <input type="range" class="range-max" min="0" max="100" value="75" step="1" />
-                    </div> -->
+
                     <h4>Sorteer op</h4>
 
                     <section class="filter-bar">
@@ -134,7 +115,7 @@
             <div class="cards">
                 <% squad.members.forEach(member=> { %>
                     <div class="card">
-                        <!-- <a href="<%= "https://github.com/" + member.gitHubHandle %>" target="_blank" -->
+                        <a href="<%= "https://github.com/" + member.gitHubHandle %>" target="_blank">
                             <% if (member.avatar) { %>
                                 <img src="<%= member.avatar %>" alt="De avatar van <%= member.name %>" />
                                 <% }else{ %>
