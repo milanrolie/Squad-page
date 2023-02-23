@@ -1,3 +1,12 @@
+![image](https://user-images.githubusercontent.com/112857190/220911679-db1a8fc5-25f0-4914-ae90-46e47cf50e8b.png)
+![image](https://user-images.githubusercontent.com/112857190/220911898-46ce70c7-0561-4b4d-9dc1-c895eebaef3f.png)
+![image](https://user-images.githubusercontent.com/112857190/220911959-d5fccb6e-b39c-4293-a3a1-11775a9abfa4.png)
+![image](https://user-images.githubusercontent.com/112857190/220912082-8a2bf6cb-b356-458f-a92e-7c1eef768c7f.png)
+
+
+
+
+
 <h3>📚Inhoudsopgave</h3>
 <ul>
 <li><a href="#Opdracht"> 👨🏼‍💼 Opdracht</a></li> 
